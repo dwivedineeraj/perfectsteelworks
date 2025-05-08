@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Md Gulfam Fabricator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2e8b57',
+                        secondary: '#2c3e50',
+                        dark: '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <!-- Top Bar -->
+            <div class="hidden md:flex justify-between py-2 border-b border-gray-200">
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-phone-alt text-primary mr-2"></i>
+                        <span>98992 05786</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="far fa-clock text-primary mr-2"></i>
+                        <span>Mon-Sat: 9:00am - 6:00pm</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919876543210" class="text-gray-600 hover:text-primary"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <!-- Main Navigation -->
+            <nav class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo.png" alt="Md Gulfam Fabricator Logo" class="h-12">
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-medium hover:text-primary">Home</a>
+                    <a href="services.html" class="font-medium hover:text-primary">Services</a>
+                    <a href="our-works.html" class="font-medium hover:text-primary">Our Works</a>
+                    <a href="contact.html" class="font-medium text-primary">Contact</a>
+                    <a href="contact.html" class="bg-primary hover:bg-green-800 text-white px-4 py-2 rounded">Get a Quote</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 hover:text-primary">Home</a>
+                <a href="services.html" class="block py-2 hover:text-primary">Services</a>
+                <a href="our-works.html" class="block py-2 hover:text-primary">Our Works</a>
+                <a href="contact.html" class="block py-2 text-primary">Contact</a>
+                <div class="mt-4">
+                    <a href="contact.html" class="inline-block bg-primary hover:bg-green-800 text-white px-4 py-2 rounded">Get a Quote</a>
+                </div>
+                <div class="mt-4 flex items-center">
+                    <i class="fas fa-phone-alt text-primary mr-2"></i>
+                    <span>98992 05786</span>
+                </div>
+                <div class="mt-2 flex items-center">
+                    <i class="far fa-clock text-primary mr-2"></i>
+                    <span>Mon-Sat: 9:00am - 6:00pm</span>
+                </div>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919876543210" class="text-gray-600 hover:text-primary"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Section -->
+    <section class="bg-gray-800 py-20 relative">
+        <div class="absolute inset-0 bg-gray-900 opacity-60"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+                <p class="text-lg max-w-3xl mx-auto">Get in touch with our team for any inquiries or to request a quote for your welding and fabrication needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-20">
+                <!-- Phone -->
+                <a href="tel:+919899205786">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Phone</h3>
+                    <p class="text-gray-600 mb-4">Call us for immediate assistance with your project.</p>
+                    <span class="text-primary font-bold text-lg hover:underline">98992 05786 <br> <br> <br> </span>
+                    
+                </div>
+                </a>               
+                <!-- WhatsApp -->
+                <a href="https://wa.me/919899205786">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                    <p class="text-gray-600 mb-4">Chat with us on WhatsApp for quick responses.</p>
+                    <span class="text-green-600 font-bold text-lg hover:underline">98992 05786 <br> <br> <br> </span>
+                </div>  
+                </a>
+                
+                <!-- Location -->
+                <a href="https://maps.app.goo.gl/voPP9nvTsob8d1ZL6" target="_blank">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Location</h3>
+                    <p class="text-gray-600 mb-4">Visit our workshop for consultations and demonstrations.</p>
+                    <span class="text-green-600 font-bold text-lg hover:underline">Shop number 786, Yadav Atta Chakki, Wazirabad, Sector 52, Gurugram, Haryana 122003</span>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Find answers to common questions about our welding and fabrication services.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="flex justify-between items-center w-full p-6 text-left focus:outline-none">
+                            <h3 class="text-lg font-bold">What types of materials do you work with?</h3>
+                            <i class="fas fa-chevron-down text-primary"></i>
+                        </button>
+                        <div class="px-6 pb-6">
+                            <p class="text-gray-600">We work with a wide range of materials including mild steel, stainless steel, aluminum, copper, brass, and various alloys. Our skilled team has experience with different thicknesses and specifications to meet your project requirements.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="flex justify-between items-center w-full p-6 text-left focus:outline-none">
+                            <h3 class="text-lg font-bold">How long does it take to complete a typical fabrication project?</h3>
+                            <i class="fas fa-chevron-down text-primary"></i>
+                        </button>
+                        <div class="px-6 pb-6">
+                            <p class="text-gray-600">Project timelines vary based on complexity, size, and specifications. Small to medium projects may take 1-2 weeks, while larger industrial projects can take several weeks to complete. We provide detailed timelines during the quotation process and pride ourselves on meeting deadlines.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="flex justify-between items-center w-full p-6 text-left focus:outline-none">
+                            <h3 class="text-lg font-bold">Do you provide on-site welding services?</h3>
+                            <i class="fas fa-chevron-down text-primary"></i>
+                        </button>
+                        <div class="px-6 pb-6">
+                            <p class="text-gray-600">Yes, we offer on-site welding services for projects that cannot be transported to our workshop. Our mobile welding units are equipped with all necessary tools and equipment to deliver high-quality welding services at your location.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="flex justify-between items-center w-full p-6 text-left focus:outline-none">
+                            <h3 class="text-lg font-bold">What is your quality control process?</h3>
+                            <i class="fas fa-chevron-down text-primary"></i>
+                        </button>
+                        <div class="px-6 pb-6">
+                            <p class="text-gray-600">We implement strict quality control measures throughout the fabrication process. This includes material inspection, regular checks during production, and final testing before delivery. All welds are inspected for integrity, and our work meets industry standards and specifications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Md Gulfam Fabricator</h3>
+                    <p class="mb-4">Professional welding and fabrication services for industrial and commercial needs.</p>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>123 Industrial Area, Mumbai, India</span>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>98992 05786</span>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919899205786" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-primary">Home</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Services</a></li>
+                        <li><a href="our-works.html" class="hover:text-primary">Our Works</a></li>
+                        <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="hover:text-primary">Industrial Steel Structure</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Stainless Steel Railings</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Ornamental Gates</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Metal Furniture</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Staircase Structure</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Storage Tanks</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Working Hours -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Working Hours</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between">
+                            <span>Monday - Friday:</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Saturday:</span>
+                            <span>9:00 AM - 4:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sunday:</span>
+                            <span>Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <div class="text-center">
+                    <p>&copy; 2023 Md Gulfam Fabricator. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // FAQ accordion functionality
+        const faqButtons = document.querySelectorAll('button.flex');
+        
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentNode;
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+</html> 

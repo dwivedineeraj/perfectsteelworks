@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Md Gulfam Fabricator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2e8b57',
+                        secondary: '#2c3e50',
+                        dark: '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .service-card:hover img {
+            transform: scale(1.1);
+            transition: transform 0.5s ease;
+        }
+        .service-card:hover h3 {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <!-- Top Bar -->
+            <div class="hidden md:flex justify-between py-2 border-b border-gray-200">
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-phone-alt text-primary mr-2"></i>
+                        <span>98992 05786</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="far fa-clock text-primary mr-2"></i>
+                        <span>Mon-Sat: 9:00am - 6:00pm</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919899205786" class="text-gray-600 hover:text-primary"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <!-- Main Navigation -->
+            <nav class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo.png" alt="Md Gulfam Fabricator Logo" class="h-12">
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-medium hover:text-primary">Home</a>
+                    <a href="services.html" class="font-medium text-primary">Services</a>
+                    <a href="our-works.html" class="font-medium hover:text-primary">Our Works</a>
+                    <a href="contact.html" class="font-medium hover:text-primary">Contact</a>
+                    <a href="contact.html" class="bg-primary hover:bg-green-800 text-white px-4 py-2 rounded">Get a Quote</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 hover:text-primary">Home</a>
+                <a href="services.html" class="block py-2 text-primary">Services</a>
+                <a href="our-works.html" class="block py-2 hover:text-primary">Our Works</a>
+                <a href="contact.html" class="block py-2 hover:text-primary">Contact</a>
+                <div class="mt-4">
+                    <a href="contact.html" class="inline-block bg-primary hover:bg-green-800 text-white px-4 py-2 rounded">Get a Quote</a>
+                </div>
+                <div class="mt-4 flex items-center">
+                    <i class="fas fa-phone-alt text-primary mr-2"></i>
+                    <span>98992 05786</span>
+                </div>
+                <div class="mt-2 flex items-center">
+                    <i class="far fa-clock text-primary mr-2"></i>
+                    <span>Mon-Sat: 9:00am - 6:00pm</span>
+                </div>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-primary"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919899205786" class="text-gray-600 hover:text-primary"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Section -->
+    <section class="bg-gray-800 py-20 relative">
+        <div class="absolute inset-0 bg-gray-900 opacity-60"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold mb-4">Our Services</h1>
+                <p class="text-lg max-w-3xl mx-auto">Comprehensive welding and fabrication services for industrial, commercial, and residential needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Services -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="Stainless Steel Railings" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">Stainless Steel Railings</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Custom commercial railings designed for durability and aesthetics. Perfect for commercial buildings, apartments, and residential properties.</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="Staircase Structure" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">Staircase Structure</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Custom metal staircases for residential and commercial properties. Designed for safety, durability, and aesthetic appeal.</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="Storage Tanks" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">Storage Tanks</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Industrial storage solutions including custom storage tanks for various industries. Built to meet specific requirements and safety standards.</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="Pressure Vessels" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">Pressure Vessels</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Oil & gas industry equipment including pressure vessels built to industry standards and specifications for maximum safety and reliability.</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="Metal Furniture" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">Metal Furniture</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Custom metal furniture designed for durability, functionality, and modern aesthetic appeal.</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 7 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="Ornamental Gates" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">Ornamental Gates</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Decorative metal gates combining security with aesthetic appeal. Custom designed and fabricated to match your property's style.</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 8 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="Metal Furniture" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">Metal Furniture</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Custom office solutions and metal furniture designed for durability, functionality, and modern aesthetic appeal.</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 9 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="Machine Parts" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">Machine Parts</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Custom fabricated components for machinery and equipment. Precision machined to your exact specifications.</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 10 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="HVAC Ductwork" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">HVAC Ductwork</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Commercial ventilation solutions including custom HVAC ductwork designed for efficiency and longevity in commercial buildings.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="welding.jpg" alt="Industrial Steel Structure" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-xl font-bold text-white">Industrial Steel Structure</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">Custom steel framework for industrial buildings, warehouses, and commercial spaces. Our structures meet all safety standards and specifications.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Start Your Project?</h2>
+            <p class="text-white text-lg max-w-2xl mx-auto mb-8">Contact us today to discuss your welding and fabrication needs. We offer free consultations and competitive quotes.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="contact.html" class="bg-white hover:bg-gray-100 text-primary px-6 py-3 rounded font-medium">Get a Quote</a>
+                <a href="https://wa.me/919899205786" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded font-medium flex items-center">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Md Gulfam Fabricator</h3>
+                    <p class="mb-4">Professional welding and fabrication services for industrial and commercial needs.</p>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Shop number 786, Yadav Atta Chakki, Wazirabad, Sector 52, Gurugram, Haryana 122003</span>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>98992 05786</span>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919899205786" class="bg-gray-700 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-primary">Home</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Services</a></li>
+                        <li><a href="our-works.html" class="hover:text-primary">Our Works</a></li>
+                        <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="hover:text-primary">Industrial Steel Structure</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Stainless Steel Railings</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Ornamental Gates</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Metal Furniture</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Staircase Structure</a></li>
+                        <li><a href="services.html" class="hover:text-primary">Storage Tanks</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Working Hours -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Working Hours</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between">
+                            <span>Monday - Friday:</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Saturday:</span>
+                            <span>9:00 AM - 4:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sunday:</span>
+                            <span>Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <div class="text-center">
+                    <p>&copy; 2023 Md Gulfam Fabricator. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 
